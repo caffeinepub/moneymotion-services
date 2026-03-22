@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Brand colors */
+    --brand-orange: 0.65 0.185 50;
+    --brand-green: 0.52 0.16 145;
+    --brand-green-light: 0.57 0.17 145;
+    --brand-whatsapp: 0.73 0.18 145;
+    --brand-beige: 0.955 0.015 85;
+    --brand-green-tint: 0.955 0.03 145;
+    --brand-dark: 0.145 0 0;
+    --brand-muted: 0.42 0 0;
+
+    /* Shadcn tokens */
+    --background: 1 0 0;
+    --foreground: 0.145 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.65 0.185 50;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.52 0.16 145;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.97 0 0;
+    --muted-foreground: 0.42 0 0;
+    --accent: 0.955 0.015 85;
+    --accent-foreground: 0.145 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.922 0 0;
+    --input: 0.922 0 0;
+    --ring: 0.65 0.185 50;
+    --chart-1: 0.65 0.185 50;
+    --chart-2: 0.52 0.16 145;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.65 0.185 50;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Hind", sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #f07a1a 0%, #1f8a3a 100%);
+  }
+  .gradient-cta {
+    background: linear-gradient(135deg, #f07a1a 0%, #2e9b4a 100%);
+  }
+  .text-gradient-brand {
+    background: linear-gradient(90deg, #f07a1a, #1f8a3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
